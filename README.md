@@ -23,3 +23,7 @@ Replace the files in the project_directory with the ones from downloaded templat
 Train the bot with command rasa train
 
 Evaluate the bot in terminal with command rasa test 
+
+Output
+
+![image](https://github.com/drajasekar/Movie-Recommendation-chatbot/assets/44079369/47de23c5-1236-4e5c-baed-b2d0fb54fef9)
