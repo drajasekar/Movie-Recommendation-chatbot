@@ -1,0 +1,67 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+
+- intent: recommend_movies
+  examples: |
+    - Can you recommend some [action](genre) movies?
+    - I want to watch a [comedy](genre) movie
+    - Any good [horror](genre) movies?
+    - What are some [romance](genre) movies to watch?
+    - Suggest a [sci-fi](genre) movie for me
+    - I'm in the mood for a [drama](genre) movie, any suggestions?
+    - Do you have any recommendations for [thriller](genre) movies?
+    - I enjoy [fantasy](genre) movies, can you recommend some?
+    - Which [Mystery](genre) movies do you recommend?
+    - I'm looking for [Animation](genre) movies, any ideas?
+    - give me recommendation for some [war](genre) movies
+    - [mystery](genre) movies
+    - [Sci-fi](genre) movie
+    - let's watch [horror](genre) movies
+    - give me information about [fantasy](genre) movies
+    - What are some [Music](genre) movies
+    - Iam watching [Horror](genre) movies
+    - Iam watching [Thriller](genre) movies
+    - [thriller](genre) movies
+
+- regex: \[(\w+)\]\(genre\)
+  examples: |
+    - [$1](genre) movies
+
